@@ -47,6 +47,12 @@ app.get('/updation', (req, res) => {
   });
 });
 
+app.get('/personalinfo', (req, res) => {
+  res.render('personalinfo.hbs', {
+    pageTitle: 'Personal Information'
+  });
+});
+
 // /bad - send back json with errorMessage
 app.get('/bad', (req, res) => {
   res.send({
